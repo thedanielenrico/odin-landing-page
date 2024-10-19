@@ -1,15 +1,17 @@
 :root {
   --main-horizontal-padding: 240px;
+  --x-lg-horizontal-padding: 300px;
   --primary-bg-color: #1f2937;
+  --secondary-bg-color: #e5e7eb;
   --primary-text-color: #f9faf8;
   --secondary-text-color: #e5e7eb;
   --tertiary-text-color: #1f2937;
   --btn-color: #3882f6;
   --border-radius-standard: 8px;
+  font-family: "Roboto";
 }
 
 body {
-  font-family: "Roboto";
   margin: 0;
 }
 
@@ -94,7 +96,7 @@ header {
 .informational-section {
   text-align: center;
   margin: 40px auto 80px auto;
-  padding: 0px 300px;
+  padding: 0px var(--x-lg-horizontal-padding);
 }
 
 .informational-header-text {
@@ -122,4 +124,23 @@ header {
   p {
     color: var(--tertiary-text-color);
   }
+}
+
+.quote-block-section {
+  padding: 100px var(--x-lg-horizontal-padding);
+  background-color: var(--secondary-bg-color);
+  figcaption {
+    text-align: end;
+    color: var(--tertiary-text-color);
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 16px;
+  }
+}
+
+.quote-body-text {
+  margin: auto;
+  font-size: 36px;
+  font-weight: 200;
+  color: var(--tertiary-text-color);
 }
