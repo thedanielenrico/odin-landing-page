@@ -1,5 +1,11 @@
 :root {
-  --main-horizontal-padding: 160px;
+  --main-horizontal-padding: 240px;
+  --primary-bg-color: #1f2937;
+  --primary-text-color: #f9faf8;
+  --secondary-text-color: #e5e7eb;
+  --tertiary-text-color: #1f2937;
+  --btn-color: #3882f6;
+  --border-radius-standard: 8px;
 }
 
 body {
@@ -14,8 +20,8 @@ img {
 
 header,
 footer {
-  background-color: #1f2937;
-  color: white;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
 }
 
 nav {
@@ -29,7 +35,7 @@ ul {
   display: flex;
   gap: 16px;
   li {
-    color: #e5e7eb;
+    color: var(--secondary-text-color);
     font-size: 18px;
   }
   li:hover {
@@ -43,6 +49,77 @@ header {
   justify-content: space-between;
   padding: 0 var(--main-horizontal-padding);
 }
+
 .header-logo-text {
   font-size: 24px;
+}
+
+.media-cta-card {
+  display: flex;
+  gap: 48px;
+  padding: 72px var(--main-horizontal-padding);
+  background-color: var(--primary-bg-color);
+  flex-wrap: wrap;
+}
+
+.card-text-content {
+  flex: 1;
+}
+
+.card-header-text {
+  color: var(--primary-text-color);
+  font-size: 48px;
+  font-weight: 900;
+  margin: 0px;
+}
+.card-body-text {
+  color: var(--secondary-text-color);
+  font-size: 18px;
+  margin-top: 0px;
+}
+
+.card-cta {
+  background-color: var(--btn-color);
+  border: none;
+  color: var(--primary-text-color);
+  padding: 8px 24px;
+  border-radius: var(--border-radius-standard);
+}
+
+.card-media {
+  flex: 1;
+  display: inline-block;
+}
+
+.informational-section {
+  text-align: center;
+  margin: 40px auto 80px auto;
+  padding: 0px 300px;
+}
+
+.informational-header-text {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 40px;
+  color: var(--tertiary-text-color);
+}
+
+.informational-image-container {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+
+.individual-informational-container {
+  max-width: 150px;
+  img {
+    border: 2px solid var(--btn-color);
+    border-radius: var(--border-radius-standard);
+    width: 150px;
+    height: 150px;
+    aspect-ratio: 1 / 1;
+  }
+  p {
+    color: var(--tertiary-text-color);
+  }
 }
