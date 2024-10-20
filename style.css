@@ -3,6 +3,7 @@
   --x-lg-horizontal-padding: 300px;
   --primary-bg-color: #1f2937;
   --secondary-bg-color: #e5e7eb;
+  --tertiary-bg-color: #3882f6;
   --primary-text-color: #f9faf8;
   --secondary-text-color: #e5e7eb;
   --tertiary-text-color: #1f2937;
@@ -143,4 +144,41 @@ header {
   font-size: 36px;
   font-weight: 200;
   color: var(--tertiary-text-color);
+}
+
+.cta-section {
+  padding: 0 var(--main-horizontal-padding);
+  margin: 48px auto;
+}
+
+.cta-banner {
+  background-color: var(--tertiary-bg-color);
+  border-radius: var(--border-radius-standard);
+  padding: 40px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cta-text-container {
+  h4 {
+    color: var(--primary-text-color);
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+  p {
+    margin-top: 8px;
+    margin-bottom: 0;
+    color: var(--secondary-text-color);
+  }
+}
+
+.cta-section-btn {
+  height: fit-content;
+  color: var(--primary-text-color);
+  background-color: inherit;
+  border: 1px solid var(--primary-text-color);
+  padding: 8px 24px;
+  border-radius: var(--border-radius-standard);
 }
