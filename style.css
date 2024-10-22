@@ -192,6 +192,11 @@ header {
   border-radius: var(--border-radius-standard);
 }
 
+.cta-pointer-icon {
+  width: 20px;
+  vertical-align: sub;
+}
+
 footer {
   text-align: center;
   padding: 32px;
