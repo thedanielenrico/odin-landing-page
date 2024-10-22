@@ -125,11 +125,12 @@ header {
 .individual-informational-container {
   max-width: 150px;
   img {
-    border: 2px solid var(--btn-color);
+    border: 3px solid var(--btn-color);
     border-radius: var(--border-radius-standard);
     width: 150px;
     height: 150px;
     aspect-ratio: 1 / 1;
+    object-fit: cover;
   }
   p {
     color: var(--tertiary-text-color);
